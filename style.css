@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a; /* Dark background for a cyberpunk vibe */
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpaperaccess.com/full/11417751.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(45deg, #ff0000, #ff5500); /* Gradient for a modern look */
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* Section Headings */
+h2 {
+    color: #ff5500; /* Slightly brighter red to stand out */
+    font-weight: bold;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Added hover animation */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Paragraph */
+p {
+    margin: 10px 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Glow effect */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /* Outer shadow */
+    background-color: rgba(255, 255, 255, 0.6); /* Add this line for a light background */
+    padding: 10px; /* Optional: Adds space around the text */
+    border-radius: 5px;
+}
+
+
+
+/* Main Section */
+main {
+    background-color: rgba(15, 130, 230, 0.95); /* Slight transparency for depth */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    backdrop-filter: blur(8px); /* Adds blur effect behind the section */
+}
+
+main a {
+    color: #ff5500; /* Set the default link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+main a:hover {
+    color: #3200fa; /* Set the hover color */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #f0f0f0;
+}
+a {
+    color: #ff5500; /* Set the default link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3200fa; /* Set the hover color */
+}
+footer img {
+    margin: 30px auto;
+    max-width: 100%;
+    display: block;
+}
+
+hr {
+    margin: 40px 0;
+    border: 1px solid #000000;
+}
+
+/* Links */
+
+
+
+/* Iframe (For video) */
+iframe {
+    margin: 20px 0;
+    border: hotpink;
+    max-width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for video */
+}
+
+
+.gallery {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Increase minimum size */
+    gap: 15px; /* Space between images */
+    padding: 10px; /* Padding around the gallery */
+}
+
+/* Individual Image Styling */
+.gallery img {
+    width: 100%; /* Full width of the parent */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Set a maximum height for images */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.4s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.gallery img:hover {
+    transform: scale(1.05) rotate(-5deg) perspective(500px) translate(10px, 20px); /* Tilt and scale effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+
+
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.85); /* Dark background with transparency */
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+}
+
+/* Navigation List */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Make nav items horizontal */
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Nav Links */
+nav a {
+    text-decoration: none;
+    color: #f0f0f0; /* Light color for contrast */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
+    border-radius: 5px;
+    color: #ff5500; /* Color change on hover */
+}
+
+/* Smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff5500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2b0082; /* Lighter orange on hover */
+    transform: translateY(-3px); /* Slight raise effect on hover */
+}
